@@ -29,6 +29,7 @@ public class Main extends AppCompatActivity {
         initRV();
 
         list.add(new MainRVRowModel("Recycler View","with progress bar at the bottom appearing when loading data",R.drawable.list_view,RVwithProgressBar.class));
+        list.add(new MainRVRowModel("GIF in WebView","display animated GIF imside a WebView (needs internet!)",R.drawable.list_view,WebView.class));
 
         adapter = new MainRVAdapter(this,list);
         rv.setAdapter(adapter);
