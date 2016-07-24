@@ -30,7 +30,8 @@ public class Main extends AppCompatActivity {
 
         list.add(new MainRVRowModel("Recycler View","with progress bar at the bottom appearing when loading data",R.drawable.list_view,RVwithProgressBar.class));
         list.add(new MainRVRowModel("GIF in WebView","display animated GIF imside a WebView (needs internet!)",R.drawable.list_view,WebView.class));
-
+        list.add(new MainRVRowModel("Upload to server","upload any image to an online server",android.R.drawable.ic_menu_upload,UploadPics.class));
+        list.add(new MainRVRowModel("Download pic","download a GIF preview in jpg and view it",android.R.drawable.stat_sys_download,DownloadPics.class));
         adapter = new MainRVAdapter(this,list);
         rv.setAdapter(adapter);
 

@@ -3,6 +3,7 @@
     package="com.coding4fun.apps">
     
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -20,6 +21,8 @@
 
         <activity android:name=".RVwithProgressBar"/>
         <activity android:name=".WebView"/>
+        <activity android:name=".UploadPics"/>
+        <activity android:name=".DownloadPics"/>
 
     </application>
 
