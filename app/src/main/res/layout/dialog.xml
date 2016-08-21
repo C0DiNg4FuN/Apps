@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+    <com.aigestudio.wheelpicker.WheelPicker
+        android:id="@+id/dialog_wheel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D3D3D3"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/dialog_tv"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick a GIF"
+            android:id="@+id/dialog_btn"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dialog_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPLOAD"
+        android:layout_marginTop="33dp"/>
+
+</LinearLayout>

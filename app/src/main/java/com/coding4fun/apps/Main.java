@@ -32,6 +32,8 @@ public class Main extends AppCompatActivity {
         list.add(new MainRVRowModel("GIF in WebView","display animated GIF imside a WebView (needs internet!)",R.drawable.list_view,WebView.class));
         list.add(new MainRVRowModel("Upload to server","upload any image to an online server",android.R.drawable.ic_menu_upload,UploadPics.class));
         list.add(new MainRVRowModel("Download pic","download a GIF preview in jpg and view it",android.R.drawable.stat_sys_download,DownloadPics.class));
+        list.add(new MainRVRowModel("Firebase","Firebase Cloud Messaging demo",R.drawable.firebase_logo,FirebaseActivity.class));
+        list.add(new MainRVRowModel("Wheel","Wheel picker demo",R.drawable.list_view,Wheel.class));
         adapter = new MainRVAdapter(this,list);
         rv.setAdapter(adapter);
 

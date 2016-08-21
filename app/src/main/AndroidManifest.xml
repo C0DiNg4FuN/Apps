@@ -23,6 +23,14 @@
         <activity android:name=".WebView"/>
         <activity android:name=".UploadPics"/>
         <activity android:name=".DownloadPics"/>
+        <activity android:name=".FirebaseActivity"/>
+        <activity android:name=".Wheel"/>
+
+        <service android:name="com.coding4fun.services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
 
     </application>
 
