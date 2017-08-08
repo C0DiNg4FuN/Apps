@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <EditText android:id="@+id/auth1_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_marginTop="22dp"/>
+
+    <EditText android:id="@+id/auth1_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_marginTop="22dp"/>
+
+    <Button android:id="@+id/auth1_btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGNUP"
+        android:textSize="22sp"
+        android:padding="12dp"
+        android:layout_marginTop="44dp"/>
+
+    <Button android:id="@+id/auth1_btn_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:textSize="22sp"
+        android:padding="12dp"
+        android:layout_marginTop="14dp"/>
+
+    <Button android:id="@+id/auth1_btn_signout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN OUT"
+        android:textSize="22sp"
+        android:padding="12dp"
+        android:layout_marginTop="14dp"/>
+
+    <Button android:id="@+id/auth1_btn_isSignedIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IS SIGNED IN ?"
+        android:textSize="22sp"
+        android:padding="12dp"
+        android:layout_marginTop="14dp"/>
+
+</LinearLayout>

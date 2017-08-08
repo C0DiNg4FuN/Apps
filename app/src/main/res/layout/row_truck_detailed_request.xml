@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_dark"
+    android:padding="6dp"
+    android:layout_margin="8dp"
+    android:id="@+id/row_truck_detailed_request">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <TextView android:id="@+id/row_truck_detailed_request_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-5-1"
+            android:textColor="@color/white_opacity_100"
+            android:textStyle="bold"/>
+
+        <TextView android:id="@+id/row_truck_detailed_request_in_bulk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IN BULK"
+            android:textColor="@color/gray_dark"
+            android:textStyle="bold"
+            android:background="@drawable/background_in_bulk_button"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#88bbbbbb"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView android:id="@+id/row_truck_detailed_request_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FROM: "
+                android:textColor="@color/white_opacity_100"
+                android:textStyle="bold"/>
+
+            <TextView android:id="@+id/row_truck_detailed_request_from2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beirut"
+                android:textColor="@color/white_opacity_100"
+                android:lines="1"
+                android:ellipsize="end"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView android:id="@+id/row_truck_detailed_request_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TO: "
+                android:textColor="@color/white_opacity_100"
+                android:textStyle="bold"/>
+
+            <TextView android:id="@+id/row_truck_detailed_request_to2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tripoli"
+                android:textColor="@color/white_opacity_100"
+                android:lines="1"
+                android:ellipsize="end"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="#EEF3F7">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatRatingBar
+                android:id="@+id/row_truck_detailed_request_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                style="?android:attr/ratingBarStyleSmall"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:rating="4"/>
+
+            <TextView android:id="@+id/row_truck_detailed_request_shipping_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/row_truck_detailed_request_rating"
+                android:layout_toStartOf="@id/row_truck_detailed_request_rating"
+                android:layout_alignParentStart="true"
+                android:text="Shipping Company 1"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:lines="1"
+                android:ellipsize="end"/>
+            <!-- layout_toLeftOf="@id/row_truck_request_rating" to ellipsize -->
+
+            <Button android:id="@+id/row_truck_detailed_request_decline_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:text="DECLINE"
+                android:textColor="@color/white_opacity_100"
+                android:textStyle="bold"
+                android:background="@color/gray_dark"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/row_truck_detailed_sub_request_list"
+            android:layout_width="match_parent"
+            android:layout_height="222dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

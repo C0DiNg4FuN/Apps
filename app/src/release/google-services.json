@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "411077645508",
+    "firebase_url": "https://sho-3abelak-cd242.firebaseio.com",
+    "project_id": "sho-3abelak-cd242",
+    "storage_bucket": "sho-3abelak-cd242.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411077645508:android:2fbf45486ad3c7e0",
+        "android_client_info": {
+          "package_name": "com.coding4fun.apps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411077645508-fivstqsibvqrbtt09vkrplfal6pg6hh4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqnNhsOsVSRae2IAobl1ZWjLexQdNl9ac"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411077645508-fivstqsibvqrbtt09vkrplfal6pg6hh4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

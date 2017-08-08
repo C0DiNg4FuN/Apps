@@ -8,4 +8,30 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="a" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:checkboxStyle">@color/colorPrimary</item>
+    </style>
+
+    <style name="b" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">?android:attr/listChoiceIndicatorMultiple</item>
+    </style>
+
+    <style name="s" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColorHint">@color/green_transparent</item>
+    </style>
+
+    <style name="dialog_picker_full_screen" parent="Theme.AppCompat.Dialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:windowBackground">@color/green_transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/logo_in</item>
+        <item name="android:windowExitAnimation">@anim/logo_out</item>
+    </style>
+
 </resources>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#66c69c6d">
+
+    <include layout="@layout/toolbar"/>
+
+<ScrollView
+    android:id="@+id/add_resturant_to_fbdb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@drawable/smart_low"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <!-- the last 2 lines are to let layout gain focus instead of
+        1st edit text so keyboard won't open -->
+
+        <EditText android:id="@+id/resturantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:inputType="text"
+            android:hint="ResturantName"
+            android:textColorHint="@color/green_transparent"
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            android:background="@color/white_opacity_40"
+            android:padding="12dp"
+            android:layout_marginTop="22dp"/>
+
+        <EditText android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:hint="password"
+            android:textColorHint="@color/green_transparent"
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            android:background="@color/white_opacity_40"
+            android:padding="12dp"
+            android:layout_marginTop="22dp"/>
+
+        <EditText android:id="@+id/ownerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:inputType="text"
+            android:hint="ownerName"
+            android:textColorHint="@color/green_transparent"
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            android:background="@color/white_opacity_40"
+            android:padding="12dp"
+            android:layout_marginTop="22dp"/>
+
+        <EditText android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:inputType="phone"
+            android:hint="phoneNumber"
+            android:textColorHint="@color/green_transparent"
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            android:background="@color/white_opacity_40"
+            android:padding="12dp"
+            android:layout_marginTop="22dp"/>
+
+        <EditText android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:hint="email"
+            android:textColorHint="@color/green_transparent"
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            android:background="@color/white_opacity_40"
+            android:padding="12dp"
+            android:layout_marginTop="22dp"/>
+
+        <EditText android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="3"
+            android:maxLines="3"
+            android:hint="address"
+            android:textColorHint="@color/green_transparent"
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            android:background="@color/white_opacity_40"
+            android:padding="12dp"
+            android:layout_marginTop="22dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/green"
+            android:text="SERVICES:"
+            android:textSize="22sp"
+            android:textColor="@color/white_opacity_75"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="@color/green_transparent_more">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:onClick="clicked_delivery">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/driver"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:textSize="19dp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="italic|bold"
+                    android:textColor="@color/green"
+                    android:text="Delivery"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkbox_delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:button="@drawable/background_checkbox"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:onClick="clicked_takeAway">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/take_away"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:textSize="19dp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="italic|bold"
+                    android:textColor="@color/green"
+                    android:text="Take Away"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkbox_takeAway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:button="@drawable/background_checkbox"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:onClick="clicked_bookTable">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/booking"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:textSize="19dp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="italic|bold"
+                    android:textColor="@color/green"
+                    android:text="Book Table"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkbox_bookTable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:button="@drawable/background_checkbox"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@color/green"
+            android:text="Payment Methods:"
+            android:textSize="22sp"
+            android:textColor="@color/white_opacity_75"
+            android:layout_marginTop="22dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="@color/green_transparent_more">
+
+            <!--
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/checkbox_visa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VISA card"
+                android:textSize="19dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="italic|bold"
+                android:textColor="@color/green"
+                android:drawableRight="@drawable/credit"
+                android:button="@drawable/background_checkbox"/>
+            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:onClick="clicked_visa">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/credit"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:textSize="19dp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="italic|bold"
+                    android:textColor="@color/green"
+                    android:text="VISA"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkbox_visa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:button="@drawable/background_checkbox"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:onClick="clicked_cash">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/cash"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:textSize="19dp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="italic|bold"
+                    android:textColor="@color/green"
+                    android:text="CASH"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkbox_cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:button="@drawable/background_checkbox"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button android:id="@+id/signupBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="SIGNUP"
+            android:onClick="signup"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GetDeliveryOnly"
+            android:onClick="getDeliveryOnly"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="moveObjectsToActivity"
+            android:onClick="moveObjectsToActivity"/>
+
+        <TextView android:id="@+id/resultsTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

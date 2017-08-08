@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/tb" layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Button android:id="@+id/v2gPick"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pick a video"
+            android:layout_margin="11dp"/>
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            android:id="@+id/v2gWHEEL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button android:id="@+id/v2gGifify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GIFIFY"
+        android:textSize="22sp"
+        android:layout_margin="11dp"/>
+
+    <WebView android:id="@+id/v2gWV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/upload_by_firebase"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:id="@+id/firebase_LL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText android:id="@+id/filePathET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="file path to download"/>
+
+        <ImageView android:id="@+id/firebaseIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/firebase_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fab_download"
+        android:onClick="downloadFileUsingFirebase"
+        app:fabSize="normal"
+        app:layout_anchor="@id/firebase_LL"
+        app:layout_anchorGravity="bottom|left"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/firebase_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fab_upload"
+        android:onClick="fab_upload"
+        app:fabSize="normal"
+        app:layout_anchor="@id/firebase_LL"
+        app:layout_anchorGravity="bottom|right"/>
+
+</android.support.design.widget.CoordinatorLayout>

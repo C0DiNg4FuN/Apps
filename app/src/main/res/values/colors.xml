@@ -3,6 +3,21 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorAccentTransparent">#88FF4081</color>
     <color name="cardView_selected">#dddddd</color>
     <color name="cardView">#ffffff</color>
+    <color name="green">#96aa39</color>
+    <color name="green_transparent">#8896aa39</color>
+    <color name="green_transparent_more">#2296aa39</color>
+    <color name="brown">#c69c6d</color>
+    <color name="brown_opacity_40">#66c69c6d</color>
+    <color name="white_opacity_20">#33ffffff</color>
+    <color name="white_opacity_40">#66ffffff</color>
+    <color name="white_opacity_50">#88ffffff</color>
+    <color name="white_opacity_75">#bbffffff</color>
+    <color name="white_opacity_100">#ffffff</color>
+    <color name="orange">#F98145</color>
+    <color name="gray_dark">#333A4D</color>
+    <color name="blue_light">#03A9DB</color>
+
 </resources>

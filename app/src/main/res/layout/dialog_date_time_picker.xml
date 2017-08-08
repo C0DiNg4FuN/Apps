@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="33dp"
+            android:text="DATE"
+            android:textSize="20sp"
+            android:textColor="@color/white_opacity_100"/>
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            android:id="@+id/wheel_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            app:wheel_curtain="false"
+            app:wheel_atmospheric="true"
+            app:wheel_cyclic="false"
+            app:wheel_indicator="true"
+            app:wheel_indicator_color="@color/white_opacity_100"
+            app:wheel_item_text_color="@color/white_opacity_50"
+            app:wheel_maximum_width_text="000"
+            app:wheel_visible_item_count="3"
+            app:wheel_selected_item_position="15"
+            app:wheel_data="@array/days"/>
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            android:id="@+id/wheel_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            app:wheel_curtain="false"
+            app:wheel_atmospheric="true"
+            app:wheel_cyclic="false"
+            app:wheel_indicator="true"
+            app:wheel_indicator_color="@color/white_opacity_100"
+            app:wheel_item_text_color="@color/white_opacity_50"
+            app:wheel_maximum_width_text="000"
+            app:wheel_visible_item_count="3"
+            app:wheel_selected_item_position="6"
+            app:wheel_data="@array/months"/>
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            android:id="@+id/wheel_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:wheel_curtain="false"
+            app:wheel_atmospheric="true"
+            app:wheel_cyclic="false"
+            app:wheel_indicator="true"
+            app:wheel_indicator_color="@color/white_opacity_100"
+            app:wheel_item_text_color="@color/white_opacity_50"
+            app:wheel_maximum_width_text="0000"
+            app:wheel_visible_item_count="3"
+            app:wheel_selected_item_position="0"
+            app:wheel_data="@array/years"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="33dp"
+            android:text="TIME"
+            android:textSize="20sp"
+            android:textColor="@color/white_opacity_100"/>
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            android:id="@+id/wheel_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            app:wheel_curtain="false"
+            app:wheel_atmospheric="true"
+            app:wheel_cyclic="false"
+            app:wheel_indicator="true"
+            app:wheel_indicator_color="@color/white_opacity_100"
+            app:wheel_item_text_color="@color/white_opacity_50"
+            app:wheel_maximum_width_text="000"
+            app:wheel_visible_item_count="3"
+            app:wheel_selected_item_position="6"
+            app:wheel_data="@array/hours"/>
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            android:id="@+id/wheel_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            app:wheel_curtain="false"
+            app:wheel_atmospheric="true"
+            app:wheel_cyclic="false"
+            app:wheel_indicator="true"
+            app:wheel_indicator_color="@color/white_opacity_100"
+            app:wheel_item_text_color="@color/white_opacity_100"
+            app:wheel_maximum_width_text="000"
+            app:wheel_visible_item_count="3"
+            app:wheel_selected_item_position="30"
+            app:wheel_data="@array/minutes"/>
+
+        <com.aigestudio.wheelpicker.WheelPicker
+            android:id="@+id/wheel_am_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:wheel_curtain="false"
+            app:wheel_atmospheric="true"
+            app:wheel_cyclic="false"
+            app:wheel_indicator="true"
+            app:wheel_indicator_color="@color/white_opacity_100"
+            app:wheel_item_text_color="@color/white_opacity_50"
+            app:wheel_maximum_width_text="0000"
+            app:wheel_visible_item_count="3"
+            app:wheel_selected_item_position="0"
+            app:wheel_data="@array/am_pm"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "504822369394",
+    "firebase_url": "https://sho-3abelak-debug.firebaseio.com",
+    "project_id": "sho-3abelak-debug",
+    "storage_bucket": "sho-3abelak-debug.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504822369394:android:2fbf45486ad3c7e0",
+        "android_client_info": {
+          "package_name": "com.coding4fun.apps.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504822369394-q4rg8go0ce0l2vrcscstcmdjnmcar06l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPTS16qVKLYJ8CxNPl8vMKijQm-3P8cig"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "504822369394-q4rg8go0ce0l2vrcscstcmdjnmcar06l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

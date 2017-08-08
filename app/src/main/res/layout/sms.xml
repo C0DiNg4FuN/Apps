@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+
+    <EditText android:id="@+id/sms_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number (ex 96170335754)"
+        android:inputType="phone"/>
+
+    <EditText android:id="@+id/sms_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="SMS body"
+        android:minLines="3"
+        android:maxLines="3"
+        android:gravity="top"
+        android:layout_marginTop="22dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="SEND SMS"
+        android:textStyle="bold"
+        android:onClick="sendSMS"/>
+
+</LinearLayout>
